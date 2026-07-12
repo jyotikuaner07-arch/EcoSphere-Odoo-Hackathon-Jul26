@@ -29,3 +29,7 @@ uploads/*
 !uploads/.gitkeep
 .pytest_cache/
 *.egg-info/
+
+# Vite env files (but keep .env.example tracked)
+.env.local
+.env.*.local
