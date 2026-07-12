@@ -32,4 +32,9 @@ export const ENDPOINTS = {
   exportReport: (id, format) => `/api/reports/${id}/export?format=${format}`,
   esgSettings: '/api/settings/esg',
   notificationSettings: '/api/settings/notifications',
+  quizzes: '/api/quizzes',
+  quiz: (id) => `/api/quizzes/${id}`,
+  quizQuestions: (quizId) => `/api/quizzes/${quizId}/questions`,
+  startQuiz: (quizId) => `/api/quizzes/${quizId}/start`,
+  submitQuiz: (participationId) => `/api/quizzes/participations/${participationId}/submit`,
 };

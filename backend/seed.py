@@ -15,6 +15,8 @@ from app.constants.enums import (
     PolicyStatus,
     SourceType,
     UserRole,
+    QuizStatus,
+    QuizDifficulty,
 )
 from app.database import engine, init_db
 from app.models.badge import Badge
@@ -28,6 +30,7 @@ from app.models.policy import Policy
 from app.models.reward import Reward
 from app.models.settings import OrganizationSettings
 from app.models.user import User
+from app.models.quiz import Quiz, QuizQuestion
 
 
 def seed() -> None:
@@ -233,7 +236,52 @@ def seed() -> None:
             )
         )
 
-        # 11. Organization settings (singleton)
+        # 11. Quizzes
+        quiz = Quiz(
+            title="Sustainability Basics Quiz",
+            category_id=challenge_cat.id,
+            description="Test your knowledge on environmental sustainability!",
+            xp=100,
+            difficulty=QuizDifficulty.EASY,
+            status=QuizStatus.ACTIVE,
+        )
+        session.add(quiz)
+        session.commit()
+        session.refresh(quiz)
+
+        # 12. Quiz Questions
+        questions = [
+            QuizQuestion(
+                quiz_id=quiz.id,
+                question_text="What is the primary greenhouse gas emitted by human activities?",
+                option_a="Oxygen",
+                option_b="Carbon Dioxide (CO2)",
+                option_c="Nitrogen",
+                option_d="Hydrogen",
+                correct_option="B",
+            ),
+            QuizQuestion(
+                quiz_id=quiz.id,
+                question_text="Which of the following is a renewable energy source?",
+                option_a="Coal",
+                option_b="Natural Gas",
+                option_c="Solar Power",
+                option_d="Petroleum",
+                correct_option="C",
+            ),
+            QuizQuestion(
+                quiz_id=quiz.id,
+                question_text="What does \"reduce, reuse, recycle\" help to minimize?",
+                option_a="Water usage",
+                option_b="Waste generation",
+                option_c="Energy consumption",
+                option_d="All of the above",
+                correct_option="D",
+            ),
+        ]
+        session.add_all(questions)
+
+        # 13. Organization settings (singleton)
         session.add(OrganizationSettings(id=1))
 
         session.commit()
