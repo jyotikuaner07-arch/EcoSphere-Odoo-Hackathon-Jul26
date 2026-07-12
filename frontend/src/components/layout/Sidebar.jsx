@@ -1,6 +1,6 @@
 import { NavLink } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { LayoutDashboard, Leaf, Users, ShieldCheck, Trophy, FileText, Settings as SettingsIcon, Globe2, HelpCircle } from 'lucide-react';
+import { LayoutDashboard, Leaf, Users, ShieldCheck, Trophy, FileText, Settings as SettingsIcon, Globe2, HelpCircle, Gamepad2 } from 'lucide-react';
 
 const links = [
   { to: '/app/dashboard', label: 'Dashboard', icon: LayoutDashboard },
@@ -8,6 +8,7 @@ const links = [
   { to: '/app/social', label: 'Social', icon: Users },
   { to: '/app/governance', label: 'Governance', icon: ShieldCheck },
   { to: '/app/gamification', label: 'Gamification', icon: Trophy },
+  { to: '/app/games', label: 'Games', icon: Gamepad2 },
   { to: '/app/quiz', label: 'Quiz', icon: HelpCircle },
   { to: '/app/reports', label: 'Reports', icon: FileText },
   { to: '/app/settings', label: 'Settings', icon: SettingsIcon },
