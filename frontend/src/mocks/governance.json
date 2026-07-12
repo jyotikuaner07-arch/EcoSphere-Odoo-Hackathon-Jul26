@@ -1,0 +1,24 @@
+{
+  "kpis": {
+    "policy_ack_rate": 82,
+    "open_audits": 2,
+    "overdue_issues": 1
+  },
+  "policies": [
+    { "id": 1, "title": "Anti-Bribery Policy", "version": "v2.1", "status": "Active", "effective_date": "2026-01-01" },
+    { "id": 2, "title": "Data Privacy Policy", "version": "v1.4", "status": "Active", "effective_date": "2026-03-15" }
+  ],
+  "acknowledgements": [
+    { "id": 1, "policy_title": "Anti-Bribery Policy", "employee_name": "Aarav Shah", "status": "Acknowledged", "acknowledged_at": "2026-07-02T00:00:00Z" },
+    { "id": 2, "policy_title": "Data Privacy Policy", "employee_name": "Priya Mehta", "status": "Pending", "acknowledged_at": null }
+  ],
+  "audits": [
+    { "id": 1, "title": "Q2 Safety Audit", "department_name": "Manufacturing", "auditor": "Rohan Kapoor", "status": "In Progress", "date": "2026-07-05" },
+    { "id": 2, "title": "Vendor Compliance Review", "department_name": "Logistics", "auditor": "Neha Iyer", "status": "Scheduled", "date": "2026-07-18" }
+  ],
+  "complianceIssues": [
+    { "id": 1, "audit_id": 1, "department_name": "Manufacturing", "severity": "High", "description": "Missing safety certification renewal.", "owner_name": "Rohan Kapoor", "due_date": "2026-07-10T00:00:00Z", "status": "Overdue" },
+    { "id": 2, "audit_id": null, "department_name": "Sales", "severity": "Medium", "description": "Expense report missing approval trail.", "owner_name": "Neha Iyer", "due_date": "2026-07-20T00:00:00Z", "status": "Open" },
+    { "id": 3, "audit_id": 2, "department_name": "Logistics", "severity": "Low", "description": "Vendor contract renewal pending signature.", "owner_name": "Aarav Shah", "due_date": "2026-06-15T00:00:00Z", "status": "Resolved" }
+  ]
+}

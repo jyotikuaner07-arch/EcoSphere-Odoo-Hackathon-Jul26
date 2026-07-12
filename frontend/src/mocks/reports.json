@@ -1,0 +1,12 @@
+{
+  "reportTypes": ["environmental", "social", "governance", "esg-summary"],
+  "filters": {
+    "departments": ["Manufacturing", "Logistics", "Sales", "HR", "IT"],
+    "modules": ["Environmental", "Social", "Governance", "Gamification"]
+  },
+  "previewRows": [
+    { "department": "Manufacturing", "metric": "Carbon Emitted", "value": "1820 kg" },
+    { "department": "Logistics", "metric": "Carbon Emitted", "value": "1340 kg" },
+    { "department": "Sales", "metric": "CSR Participation", "value": "72%" }
+  ]
+}

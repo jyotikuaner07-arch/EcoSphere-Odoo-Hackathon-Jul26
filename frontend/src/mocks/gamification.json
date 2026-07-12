@@ -1,0 +1,25 @@
+{
+  "challenges": [
+    { "id": 1, "title": "Zero-Waste Week", "category_id": 3, "description": "Reduce office waste to near-zero for one week.", "xp": 150, "difficulty": "Medium", "evidence_required": true, "deadline": "2026-07-20T23:59:59Z", "status": "Active" },
+    { "id": 2, "title": "Cycle to Work", "category_id": 3, "description": "Commute by bicycle 5 times this month.", "xp": 100, "difficulty": "Easy", "evidence_required": false, "deadline": "2026-07-31T23:59:59Z", "status": "Active" },
+    { "id": 3, "title": "Paperless Office", "category_id": 3, "description": "Go fully digital for one week.", "xp": 80, "difficulty": "Easy", "evidence_required": false, "deadline": "2026-06-15T23:59:59Z", "status": "Completed" },
+    { "id": 4, "title": "Energy Audit Champion", "category_id": 3, "description": "Conduct a full energy audit of your floor.", "xp": 200, "difficulty": "Hard", "evidence_required": true, "deadline": "2026-08-05T23:59:59Z", "status": "Draft" }
+  ],
+  "badges": [
+    { "id": 1, "name": "Challenge Champion", "description": "Complete 5 challenges.", "unlock_rule": { "metric": "completed_challenges", "operator": ">=", "value": 5 }, "icon_url": null, "status": "Active", "earned": true },
+    { "id": 2, "name": "Green Streak", "description": "Complete 3 challenges in a row.", "unlock_rule": { "metric": "challenge_streak", "operator": ">=", "value": 3 }, "icon_url": null, "status": "Active", "earned": false },
+    { "id": 3, "name": "XP Master", "description": "Reach 1000 total XP.", "unlock_rule": { "metric": "total_xp", "operator": ">=", "value": 1000 }, "icon_url": null, "status": "Active", "earned": false }
+  ],
+  "employeeStats": { "completed_challenges": 3, "challenge_streak": 1, "total_xp": 340 },
+  "rewards": [
+    { "id": 1, "name": "Eco Water Bottle", "description": "Reusable steel water bottle.", "points_required": 100, "stock": 12, "status": "Active" },
+    { "id": 2, "name": "Extra Day Off", "description": "One additional paid leave day.", "points_required": 500, "stock": 3, "status": "Active" },
+    { "id": 3, "name": "Company Hoodie", "description": "Branded sustainable hoodie.", "points_required": 250, "stock": 0, "status": "Active" }
+  ],
+  "leaderboard": [
+    { "employee_id": 1, "name": "Priya Mehta", "xp": 620, "department": "Sales" },
+    { "employee_id": 2, "name": "Aarav Shah", "xp": 480, "department": "HR" },
+    { "employee_id": 3, "name": "Rohan Kapoor", "xp": 340, "department": "Manufacturing" },
+    { "employee_id": 4, "name": "Neha Iyer", "xp": 290, "department": "Logistics" }
+  ]
+}

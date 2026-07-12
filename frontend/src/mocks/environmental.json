@@ -1,0 +1,31 @@
+{
+  "kpis": {
+    "total_carbon_emitted": 4820,
+    "carbon_trend_pct": -6.2,
+    "goals_on_track": 3,
+    "goals_total": 5
+  },
+  "departmentCarbon": [
+    { "department": "Manufacturing", "co2e": 1820 },
+    { "department": "Logistics", "co2e": 1340 },
+    { "department": "Sales", "co2e": 640 },
+    { "department": "HR", "co2e": 210 },
+    { "department": "IT", "co2e": 810 }
+  ],
+  "emissionFactors": [
+    { "id": 1, "name": "Diesel Fuel", "unit": "litre", "co2e_value": 2.68, "source_type": "Fleet", "status": "Active" },
+    { "id": 2, "name": "Grid Electricity", "unit": "kWh", "co2e_value": 0.82, "source_type": "Manufacturing", "status": "Active" },
+    { "id": 3, "name": "Office Paper", "unit": "kg", "co2e_value": 1.1, "source_type": "Purchase", "status": "Active" },
+    { "id": 4, "name": "Air Freight", "unit": "kg-km", "co2e_value": 0.5, "source_type": "Expense", "status": "Inactive" }
+  ],
+  "carbonTransactions": [
+    { "id": 101, "department_id": 1, "department_name": "Manufacturing", "source_type": "Manufacturing", "quantity": 420, "co2e_calculated": 344.4, "calculation_mode": "AUTO", "created_at": "2026-07-11T09:00:00Z" },
+    { "id": 102, "department_id": 2, "department_name": "Logistics", "source_type": "Fleet", "quantity": 180, "co2e_calculated": 482.4, "calculation_mode": "AUTO", "created_at": "2026-07-11T14:30:00Z" },
+    { "id": 103, "department_id": 3, "department_name": "Sales", "source_type": "Expense", "quantity": 60, "co2e_calculated": 30, "calculation_mode": "MANUAL", "created_at": "2026-07-10T11:15:00Z" }
+  ],
+  "goals": [
+    { "id": 1, "department_id": 1, "department_name": "Manufacturing", "metric_type": "Carbon Reduction", "target_value": 1500, "current_value": 1820, "deadline": "2026-12-31", "status": "At Risk" },
+    { "id": 2, "department_id": 2, "department_name": "Logistics", "metric_type": "Fuel Efficiency", "target_value": 1200, "current_value": 1340, "deadline": "2026-12-31", "status": "On Track" },
+    { "id": 3, "department_id": 5, "department_name": "IT", "metric_type": "Energy Usage", "target_value": 900, "current_value": 810, "deadline": "2026-10-31", "status": "On Track" }
+  ]
+}

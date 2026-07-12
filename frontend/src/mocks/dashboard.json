@@ -1,0 +1,31 @@
+{
+  "organizationScore": {
+    "environmental_score": 78,
+    "social_score": 65,
+    "governance_score": 82,
+    "total_score": 75
+  },
+  "kpis": {
+    "total_carbon_emitted": 4820,
+    "carbon_trend_pct": -6.2,
+    "csr_participation_rate": 68,
+    "open_compliance_issues": 3
+  },
+  "departmentLeaderboard": [
+    { "department_id": 1, "name": "Manufacturing", "total_score": 88 },
+    { "department_id": 2, "name": "Logistics", "total_score": 81 },
+    { "department_id": 3, "name": "Sales", "total_score": 76 },
+    { "department_id": 4, "name": "HR", "total_score": 72 },
+    { "department_id": 5, "name": "IT", "total_score": 69 }
+  ],
+  "recentActivity": [
+    { "id": 1, "type": "badge_unlocked", "message": "Aarav unlocked 'Challenge Champion'", "created_at": "2026-07-12T08:40:00Z" },
+    { "id": 2, "type": "compliance_issue", "message": "New compliance issue raised in Manufacturing", "created_at": "2026-07-12T07:15:00Z" },
+    { "id": 3, "type": "challenge_completed", "message": "Priya completed 'Zero-Waste Week'", "created_at": "2026-07-11T18:02:00Z" }
+  ],
+  "employeeXp": {
+    "current_xp": 340,
+    "current_level_floor": 300,
+    "next_level_floor": 500
+  }
+}

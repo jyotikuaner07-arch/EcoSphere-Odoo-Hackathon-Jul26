@@ -1,0 +1,23 @@
+{
+  "departments": [
+    { "id": 1, "name": "Manufacturing", "code": "MFG", "employee_count": 120, "status": "Active" },
+    { "id": 2, "name": "Logistics", "code": "LOG", "employee_count": 45, "status": "Active" }
+  ],
+  "categories": [
+    { "id": 1, "name": "Environmental Volunteering", "type": "CSR_ACTIVITY", "status": "Active" },
+    { "id": 2, "name": "Energy Reduction", "type": "CHALLENGE", "status": "Active" }
+  ],
+  "esgSettings": {
+    "weights": { "environmental": 40, "social": 30, "governance": 30 },
+    "auto_emission_calculation": true,
+    "evidence_requirement": true,
+    "badge_auto_award": true
+  },
+  "notificationSettings": {
+    "compliance_issue_raised": true,
+    "approval_decisions": true,
+    "policy_reminders": true,
+    "badge_unlocked": true,
+    "email_enabled": false
+  }
+}
