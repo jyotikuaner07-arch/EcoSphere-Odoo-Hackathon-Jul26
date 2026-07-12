@@ -1,0 +1,13 @@
+# app/auth/security.py
+from passlib.context import CryptContext
+
+# Setup bcrypt hashing context
+pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
+
+def hash_password(password: str) -> str:
+    """Returns the hashed version of a raw password."""
+    return pwd_context.hash(password)
+
+def verify_password(plain_password: str, hashed_password: str) -> bool:
+    """Checks if the provided password matches the stored hash."""
+    return pwd_context.verify(plain_password, hashed_password)
