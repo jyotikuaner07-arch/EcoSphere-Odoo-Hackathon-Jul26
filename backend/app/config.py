@@ -7,7 +7,7 @@ class Settings(BaseSettings):
     
     # Database Settings
     # Defaulting to the local MySQL setup discussed in progress summary
-    DATABASE_URL: str = "mysql+pymysql://root:password@127.0.0.1:3306/ecosphere"
+    DATABASE_URL: str = "mysql+pymysql://user:password@localhost:3306/ecosphere_db"
     
     # JWT Settings
     JWT_SECRET: str = "hcakathon_secret_key_change_in_production"

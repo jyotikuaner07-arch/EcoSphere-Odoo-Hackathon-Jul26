@@ -98,3 +98,61 @@ class GenericStatus(str, Enum):
     """
     ACTIVE = "Active"
     INACTIVE = "Inactive"
+
+
+class SourceType(str, Enum):
+    PURCHASE = "Purchase"
+    MANUFACTURING = "Manufacturing"
+    EXPENSE = "Expense"
+    FLEET = "Fleet"
+
+
+class ChallengeDifficulty(str, Enum):
+    EASY = "Easy"
+    MEDIUM = "Medium"
+    HARD = "Hard"
+
+
+class CsrActivityStatus(str, Enum):
+    DRAFT = "Draft"
+    ACTIVE = "Active"
+    COMPLETED = "Completed"
+    CANCELLED = "Cancelled"
+
+
+class PolicyStatus(str, Enum):
+    DRAFT = "Draft"
+    ACTIVE = "Active"
+    ARCHIVED = "Archived"
+
+
+class GoalStatus(str, Enum):
+    ACTIVE = "Active"
+    ACHIEVED = "Achieved"
+    MISSED = "Missed"
+    CANCELLED = "Cancelled"
+
+
+class AuditStatus(str, Enum):
+    SCHEDULED = "Scheduled"
+    IN_PROGRESS = "In Progress"
+    COMPLETED = "Completed"
+    CANCELLED = "Cancelled"
+
+
+class Severity(str, Enum):
+    LOW = "Low"
+    MEDIUM = "Medium"
+    HIGH = "High"
+    CRITICAL = "Critical"
+
+
+class AcknowledgementStatus(str, Enum):
+    PENDING = "Pending"
+    ACKNOWLEDGED = "Acknowledged"
+
+
+class RedemptionStatus(str, Enum):
+    PENDING = "Pending"
+    FULFILLED = "Fulfilled"
+    CANCELLED = "Cancelled"

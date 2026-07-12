@@ -12,7 +12,8 @@ engine = create_engine(
 
 def init_db():
     """Initializes the database and creates all tables defined in models."""
-    # This will be called on app startup in main.py
+    import app.models  # noqa: F401 — register all SQLModel tables
+
     SQLModel.metadata.create_all(engine)
 
 def get_session():
