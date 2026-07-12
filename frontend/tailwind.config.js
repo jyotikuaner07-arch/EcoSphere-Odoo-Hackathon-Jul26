@@ -4,7 +4,8 @@ export default {
   theme: {
     extend: {
       colors: {
-        bgBase: '#F7FAF7',
+        bgBase: '#E8F0E9',
+        bgBaseDeep: '#D9E8DD',
         bgSurface: '#FFFFFF',
         bgSurfaceAlt: '#EEF5EE',
         primaryGreen: '#2F7D4F',
@@ -23,7 +24,11 @@ export default {
       },
       boxShadow: {
         card: '0 4px 20px rgba(47, 125, 79, 0.08)',
-        cardHover: '0 8px 30px rgba(47, 125, 79, 0.14)',
+        cardHover: '0 12px 40px rgba(47, 125, 79, 0.18)',
+        glass: '0 8px 32px rgba(31, 92, 58, 0.14)',
+      },
+      backdropBlur: {
+        xs: '2px',
       },
     },
   },

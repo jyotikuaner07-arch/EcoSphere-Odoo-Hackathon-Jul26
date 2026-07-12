@@ -7,10 +7,37 @@
 body {
   margin: 0;
   font-family: 'Inter', sans-serif;
-  background-color: #F7FAF7;
   color: #16241C;
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at 15% 10%, rgba(47, 125, 79, 0.16) 0%, transparent 45%),
+    radial-gradient(circle at 85% 20%, rgba(76, 126, 168, 0.14) 0%, transparent 40%),
+    radial-gradient(circle at 25% 85%, rgba(217, 164, 65, 0.10) 0%, transparent 45%),
+    linear-gradient(160deg, #EAF2EB 0%, #DCEAE1 55%, #D3E5DA 100%);
+  background-attachment: fixed;
 }
 
 .font-tabular {
   font-variant-numeric: tabular-nums;
+}
+
+@layer components {
+  .glass-card {
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    border-radius: 1.1rem;
+    box-shadow: 0 8px 32px rgba(31, 92, 58, 0.12);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+  }
+  .glass-card:hover {
+    box-shadow: 0 14px 44px rgba(31, 92, 58, 0.2);
+  }
+  .glass-panel {
+    background: rgba(255, 255, 255, 0.45);
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+    border-right: 1px solid rgba(255, 255, 255, 0.5);
+  }
 }

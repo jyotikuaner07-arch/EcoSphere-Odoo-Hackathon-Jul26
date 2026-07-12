@@ -4,7 +4,7 @@ import { Bell } from 'lucide-react';
 export default function Topbar() {
   const { user } = useAuth();
   return (
-    <header className="h-16 bg-bgSurface border-b border-border flex items-center justify-end px-6 gap-4">
+    <header className="glass-panel h-16 flex items-center justify-end px-8 gap-5 sticky top-0 z-10 border-b-0">
       <button className="text-textMuted hover:text-primaryGreenDark transition-colors">
         <Bell size={20} />
       </button>
