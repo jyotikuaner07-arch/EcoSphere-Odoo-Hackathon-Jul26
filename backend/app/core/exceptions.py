@@ -102,6 +102,16 @@ class InvalidCredentialsError(AppException):
         super().__init__(message)
 
 
+class BadRequestError(AppException):
+    """Raised when a request has invalid parameters or violates a business rule."""
+
+    error_code = "BAD_REQUEST"
+    status_code = 400
+
+    def __init__(self, message: str = "Invalid request."):
+        super().__init__(message)
+
+
 class PermissionDeniedError(AppException):
     """Raised when a logged-in user's role doesn't allow the requested action."""
 

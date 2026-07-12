@@ -18,6 +18,7 @@ from app.models.compliance_issue import ComplianceIssue
 from app.models.department_score import DepartmentScore
 from app.models.notification import Notification
 from app.models.settings import OrganizationSettings
+from app.models.quiz import Quiz, QuizQuestion, QuizParticipation
 
 __all__ = [
     "User",
@@ -41,4 +42,7 @@ __all__ = [
     "DepartmentScore",
     "Notification",
     "OrganizationSettings",
+    "Quiz",
+    "QuizQuestion",
+    "QuizParticipation",
 ]

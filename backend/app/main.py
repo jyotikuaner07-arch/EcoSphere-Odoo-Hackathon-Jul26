@@ -30,6 +30,7 @@ from app.routers import (
     reward_router,
     scoring_router,
     settings_router,
+    quiz_router,
 )
 
 
@@ -84,6 +85,7 @@ app.include_router(dashboard_router.router_leaderboard, prefix=API_PREFIX)
 app.include_router(notification_router.router, prefix=API_PREFIX)
 app.include_router(report_router.router, prefix=API_PREFIX)
 app.include_router(settings_router.router, prefix=API_PREFIX)
+app.include_router(quiz_router.router, prefix=API_PREFIX)
 
 
 @app.get("/health")

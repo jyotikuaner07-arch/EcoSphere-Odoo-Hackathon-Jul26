@@ -156,3 +156,16 @@ class RedemptionStatus(str, Enum):
     PENDING = "Pending"
     FULFILLED = "Fulfilled"
     CANCELLED = "Cancelled"
+
+
+class QuizStatus(str, Enum):
+    DRAFT = "Draft"
+    ACTIVE = "Active"
+    COMPLETED = "Completed"
+    ARCHIVED = "Archived"
+
+
+class QuizDifficulty(str, Enum):
+    EASY = "Easy"
+    MEDIUM = "Medium"
+    HARD = "Hard"
